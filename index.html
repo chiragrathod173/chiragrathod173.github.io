@@ -14,6 +14,7 @@
 }
 
 body{
+    background:#f4f4f4;
     line-height:1.6;
 }
 
@@ -21,11 +22,11 @@ header{
     background:#222;
     color:white;
     text-align:center;
-    padding:80px 20px;
+    padding:60px 20px;
 }
 
 header h1{
-    font-size:48px;
+    font-size:40px;
 }
 
 header p{
@@ -35,8 +36,8 @@ header p{
 
 nav{
     background:#333;
-    padding:15px;
     text-align:center;
+    padding:15px;
 }
 
 nav a{
@@ -47,36 +48,42 @@ nav a{
 }
 
 section{
-    padding:50px 20px;
+    padding:40px;
     text-align:center;
 }
 
-.project{
-    background:#f4f4f4;
+.card{
+    background:white;
+    margin:20px auto;
     padding:20px;
-    margin:15px auto;
-    max-width:700px;
+    max-width:800px;
     border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-ul{
-    list-style:none;
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#007bff;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    margin:10px;
 }
 
 footer{
     background:#222;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:15px;
 }
 </style>
 </head>
-
 <body>
 
 <header>
     <h1>Chirag Rathod</h1>
-    <p>Diploma Chemical Engineering Student | HTML | CSS | GitHub</p>
+    <p>Diploma Chemical Engineering Student</p>
 </header>
 
 <nav>
@@ -88,70 +95,76 @@ footer{
 </nav>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p> My name is Chirag Rathod.</p>   
-    <p>I am a Diploma Chemical Engineering student
-        at Shree K.J. Polytechnic.</p>    
-      <p>I am passionate about technology,
-        web development, and learning new skills.</p>  
-    
-    
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am Chirag Rathod, a Diploma Chemical Engineering student at
+            Shree K.J. Polytechnic.</p>
+           <p>I am interested in technology,
+            web development, and learning new skills.</p>  
+        
+    </div>
 </section>
 
 <section id="education">
-    <h2>Education</h2>
-    <p>Diploma in Chemical Engineering (Semester 4)</p>
-    <p>Shree K.J. Polytechnic</p>
-    <p>SSC - 78%</p>
+    <div class="card">
+        <h2>Education</h2>
+        <p>Diploma in Chemical Engineering</p>
+        <p>Shree K.J. Polytechnic</p>
+    </div>
 </section>
 
 <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>GitHub</li>
-        <li>MS Word</li>
-        <li>Internet Research</li>
-        <li>Communication Skills</li>
-        <li>Problem Solving</li>
-    </ul>
+    <div class="card">
+        <h2>Skills</h2>
+        <p>HTML, CSS, GitHub, Web Development, Reading, Drawing</p>
+    </div>
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
+    <div class="card">
+        <h2>Projects</h2>
 
-    <div class="project">
-        <h3>Asset Manager Project</h3>
-        <p>
-            A web-based asset management system developed using Replit
-            for managing and tracking assets efficiently.
-        </p>
-    </div>
+        <h3>Asset Manager</h3>
+        <p>Asset Management Web Application for tracking and managing assets.</p>
 
-    <div class="project">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-            A personal portfolio website showcasing my education,
-            skills, projects, and contact information.
-        </p>
+        <a class="btn"
+        href="https://asset-manager--sanjayrathod078.replit.app/"
+        target="_blank">Live Demo</a>
+
+        <a class="btn"
+        href="https://chiragrathod173.github.io"
+        target="_blank">Portfolio Website</a>
     </div>
 </section>
 
 <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: sanjayrathod07870787@gmail.com</p>
-    <p>Phone: 7016902352</p>
-    <p>LinkedIn: www.linkedin.com/in/chirag-rathod-b5b545376</p>
-    <p>Bharuch, Gujarat, India</p>
+    <div class="card">
+        <h2>Contact Me</h2>
+
+        <p>Email: sanjayrathod07870787@gmail.com</p>
+        <p>Phone: +91 7016902352</p>
+
+        <p>
+            GitHub:
+            <a href="https://chiragrathod173.github.io" target="_blank">
+                chiragrathod173.github.io
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/chirag-rathod-b5b545376"
+            target="_blank">
+                chirag-rathod-b5b545376
+            </a>
+        </p>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Chirag Rathod | Portfolio Website</p>
+    <p>© 2026 Chirag Rathod. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
-
-
 
