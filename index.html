@@ -3,163 +3,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chirag Rathod Portfolio</title>
+<title>Chirag Rathod | Portfolio</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    background:#f4f4f4;
-    line-height:1.6;
+    background:#0f172a;
+    color:white;
 }
 
 header{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
+    background:#1e293b;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-header h1{
-    font-size:40px;
-}
-
-header p{
-    font-size:20px;
-    margin-top:10px;
-}
-
-nav{
-    background:#333;
-    text-align:center;
-    padding:15px;
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#38bdf8;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+    margin-left:20px;
 }
 
-section{
-    padding:40px;
+.hero{
     text-align:center;
+    padding:100px 20px;
 }
 
-.card{
-    background:white;
-    margin:20px auto;
-    padding:20px;
-    max-width:800px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+.hero h1{
+    font-size:50px;
+}
+
+.hero span{
+    color:#38bdf8;
 }
 
 .btn{
     display:inline-block;
-    padding:10px 20px;
-    background:#007bff;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#38bdf8;
     color:white;
     text-decoration:none;
     border-radius:5px;
-    margin:10px;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#38bdf8;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
 }
 
 footer{
-    background:#222;
-    color:white;
     text-align:center;
-    padding:15px;
+    padding:20px;
+    background:#1e293b;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Chirag Rathod</h1>
-    <p>Diploma Chemical Engineering Student</p>
+    <div class="logo">Chirag Rathod</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <div class="card">
-        <h2>About Me</h2>
-        <p>I am Chirag Rathod, a Diploma Chemical Engineering student at
-            Shree K.J. Polytechnic.</p>
-           <p>I am interested in technology,
-            web development, and learning new skills.
-           </p>  
-        
-    </div>
+<section class="hero">
+    <h1>Hello, I'm <span>Chirag Rathod</span></h1>
+    <p>Diploma Computer Engineering Student</p>
+    <a href="#contact" class="btn">Contact Me</a>
 </section>
 
-<section id="education">
-    <div class="card">
-        <h2>Education</h2>
-        <p>Diploma in Chemical Engineering</p>
-        <p>Shree K.J. Polytechnic</p>
-    </div>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Diploma Computer Engineering student at
+        Shree K.J. Polytechnic. I enjoy web development,
+        programming, reading, and drawing.
+    </p>
 </section>
 
 <section id="skills">
-    <div class="card">
-        <h2>Skills</h2>
-        <p>HTML, CSS, GitHub, Web Development, Reading, Drawing</p>
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Web Development</div>
     </div>
 </section>
 
 <section id="projects">
-    <div class="card">
-        <h2>Projects</h2>
+    <h2>Projects</h2>
 
+    <div class="project-card">
         <h3>Asset Manager</h3>
-        <p>Asset Management Web Application for tracking and managing assets.</p>
-
-        <a class="btn"
-        href="https://asset-manager--sanjayrathod078.replit.app/"
-        target="_blank">Live Demo</a>
-
-        <a class="btn"
-        href="https://chiragrathod173.github.io"
-        target="_blank">Portfolio Website</a>
+        <p>
+            A web-based application to manage and track assets.
+        </p>
     </div>
+
+    <div class="project-card">
+        <h3>Personal Portfolio</h3>
+        <p>
+            My personal portfolio website hosted on GitHub Pages.
+        </p>
+    </div>
+
 </section>
 
 <section id="contact">
-    <div class="card">
-        <h2>Contact Me</h2>
-
-        <p>Email: sanjayrathod07870787@gmail.com</p>
-        <p>Phone: +91 7016902352</p>
-
-        <p>
-            GitHub:
-            <a href="https://chiragrathod173.github.io" target="_blank">
-                chiragrathod173.github.io
-            </a>
-        </p>
-
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/chirag-rathod-b5b545376"
-            target="_blank">
-                chirag-rathod-b5b545376
-            </a>
-        </p>
-    </div>
+    <h2>Contact</h2>
+    <p>Email: sanjayrathod07870787@gmail.com</p>
+    <p>LinkedIn: www.linkedin.com/in/chirag-rathod-b5b545376</p>
 </section>
 
 <footer>
@@ -168,4 +168,3 @@ footer{
 
 </body>
 </html>
-
